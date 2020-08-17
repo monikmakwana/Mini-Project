@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="logic.js"></script>
+    </head>
+    <body onload="clr()">
+        <h2><u>Simple Calculator</u></h2><br><br>
+        <div id="calc">
+        <table border="0" width="25%">
+            <tr>
+                <td colspan="5"><input type="textarea" id="result" default="0" disabled></td>  
+
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="write_this('7')" /></td>
+                <td><input type="button" value="8" onclick="write_this('8')" /></td>
+                <td><input type="button" value="9" onclick="write_this('9')" /></td>
+                <td><input type="button" value="⟵" onclick="back()"/></td>
+                <td><input type="button" style="background-color: red;" value="C" onclick="clr()" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="write_this('4')" /></td>
+                <td><input type="button" value="5" onclick="write_this('5')" /></td>
+                <td><input type="button" value="6" onclick="write_this('6')" /></td>
+                <td><input type="button" value="/" onclick="write_this('/')" /></td>
+                <td><input type="button" value="+" onclick="write_this('+')" /></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="write_this('1')" /></td>
+                <td><input type="button" value="2" onclick="write_this('2')" /></td>
+                <td><input type="button" value="3" onclick="write_this('3')" /></td>
+                <td><input type="button" value="-" onclick="write_this('-')" /></td>
+                
+                <td rowspan="2"><input type="button" style="height: 100px;"  value="=" onclick="calculation()" /></td>
+              
+            </tr>
+            <tr>
+                <td colspan=2><input type="button" value="0" onclick="write_this('0')" /></td>
+                <td><input type="button" value="." onclick="write_this('.')" /></td>
+                <td><input type="button" value="*" onclick="write_this('*')" /></td>
+
+            </tr>
+
+        </table>
+    </div>
+    </body>
+</html>

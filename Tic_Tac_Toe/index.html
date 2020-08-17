@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Tic-Tac-Toe
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <script type="text/javascript" src="logic.js" ></script>
+    </head>
+    <body>
+        <h2>Tic-Tac-Toe Game</h2><br>
+        <div id="btn">
+        <table >
+       <tr>
+       <td><input type=button id="1" onclick="fill(1)" value="" class="block"></td> 
+       <td><input type=button id="2" onclick="fill(2)" value="" class="block"></td> 
+       <td><input type=button id="3" onclick="fill(3)" value="" class="block"></td> 
+        </tr>
+        <tr>
+       <td><input type=button id="4" onclick="fill(4)" value="" class="block"></td> 
+       <td><input type=button id="5" onclick="fill(5)" value="" class="block"></td> 
+       <td> <input type=button id="6" onclick="fill(6)" value="" class="block"></td> 
+        </tr>
+        <tr>
+            <td> <input type=button id="7" onclick="fill(7)" value="" class="block"></td> 
+            <td> <input type=button id="8" onclick="fill(8)" value="" class="block"></td> 
+            <td> <input type=button id="9" onclick="fill(9)" value="" class="block"></td> 
+        </tr>
+        </table>
+        </div>
+        <br><br>
+       
+       <!--<input type="button" onclick="window.location.href='index.html'" value="Reset"> -->
+       
+       <input type="button" onclick="reset()" value="Reset" id="resetbtn">
+        
+       <h3><label id="wins"></label></h3>
+     </body>
+</html>
